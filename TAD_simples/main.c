@@ -12,7 +12,7 @@ int main(){
     float x, y;
     pto_acessa(p3, &x, &y);
 
-    printf("A copia tem os dados: X[%f], Y[%f]",x,y);
+    printf("A copia tem os dados: X[%.2f], Y[%.2f]",x,y);
     printf("Os 2 pontos são iguais ? 1 = sim, 0 = nao, Resultado: [%d]",igual);
     pto_libera(p1);
     pto_libera(p2);
