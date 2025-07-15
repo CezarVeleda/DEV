@@ -23,7 +23,12 @@ void depositar(Conta *c, float valor){
 
 void sacar(Conta *c, float valor){
     if(c != NULL){
+        if(c->saldo_em_conta >= valor){
         c->saldo_em_conta -= valor;
+        }
+        else{
+            printf("Valor disponivel não suficiente");
+        }
     }
 }
 float consulta(Conta *c){
